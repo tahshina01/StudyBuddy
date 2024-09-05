@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "730151056377",
+    "project_id": "frenbot-ebcbe",
+    "storage_bucket": "frenbot-ebcbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730151056377:android:2f7fd90cf8d0a510ec8328",
+        "android_client_info": {
+          "package_name": "com.example.frenbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730151056377-6vedrbaeo3dvjf3dii7vsm521avfbl04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3RgnuJYGOm6LW9XyspvMvd7m0ku5kfAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730151056377-6vedrbaeo3dvjf3dii7vsm521avfbl04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

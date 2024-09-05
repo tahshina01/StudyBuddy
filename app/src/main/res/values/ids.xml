@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="messageEditText" type="id" />
+    <item name="messageNumberEditText" type="id" />
+    <item name="selectMessageNumberButton" type="id" />
+    <item name="callNumberEditText" type="id" />
+    <item name="selectCallNumberButton" type="id" />
+    <item name="sendButton" type="id" />
+</resources>

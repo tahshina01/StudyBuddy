@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/AntiqueWhite"
+    tools:context=".Sos">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/lev"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FA3E63"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/courses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="SOS"
+            android:fontFamily="@font/notoserifblack"
+            android:textColor="@color/White"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+    <ImageView
+        android:src="@drawable/sos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your message"
+        android:textCursorDrawable="@drawable/white_cursor_color"
+        android:background="@drawable/sos_card"
+        android:inputType="textMultiLine"
+        android:minLines="6"
+        android:textColor="@color/White"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT PHONE NUMBER"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to send emergency message and call"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp" />
+
+
+
+    <!-- Number for Sending Message -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        tools:ignore="ExtraText">
+
+        <EditText
+            android:layout_marginRight="10dp"
+            android:id="@+id/messageNumberEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone number"
+            android:inputType="phone" />
+
+
+        <ImageView
+            android:id="@+id/selectMessageNumberButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/message"
+            android:layout_gravity="center"
+            android:backgroundTint="#FA3E63"
+            android:onClick="openContactsForMessage" />
+
+
+
+    </LinearLayout>
+
+    <!-- Number for Sending Call -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_marginRight="10dp"
+            android:id="@+id/callNumberEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone number"
+            android:inputType="phone" />
+
+        <ImageView
+            android:id="@+id/selectCallNumberButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/call"
+            android:layout_gravity="center"
+            android:onClick="openContactsForMessage" />
+    </LinearLayout>
+
+    <!-- Send Message and Call Button -->
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveData"
+        android:text="Save"
+        android:backgroundTint="#FA3E63"
+        android:layout_marginTop="16dp" />
+    <!--        android:onClick="sendMessageAndCall"-->
+
+    <Button
+        android:id="@+id/toggleServiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FA3E63"
+        android:layout_marginTop="16dp"
+        android:onClick="toggleShakeService" />
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

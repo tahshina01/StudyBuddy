@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/White"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/Orange"
+                android:elevation="30dp">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_margin="20dp"
+                    android:id="@+id/title2"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/olivia"
+                    android:text="WELCOME TO DASHBOARD"
+                    android:textColor="@color/White"
+                    android:textSize="55dp"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--  <EditText-->
+            <!--      android:id="@+id/search"-->
+            <!--      android:layout_width="match_parent"-->
+            <!--      android:layout_marginStart="20dp"-->
+            <!--      android:layout_marginEnd="20dp"-->
+            <!--      android:padding="8dp"-->
+            <!--      android:layout_height="wrap_content"-->
+            <!--      android:ems="10"-->
+            <!--      android:background="@drawable/search"-->
+            <!--      android:inputType="text"-->
+            <!--      android:hint="Search"-->
+            <!--      android:textColor="@color/Black"-->
+            <!--      android:fontFamily="@font/olivia"-->
+            <!--      android:elevation="5dp"-->
+            <!--      android:drawableEnd="@android:drawable/ic_menu_search"-->
+            <!--      app:layout_constraintStart_toStartOf="parent"-->
+            <!--      app:layout_constraintEnd_toEndOf="parent"-->
+            <!--      app:layout_constraintTop_toBottomOf="@id/cl"-->
+            <!--      app:layout_constraintBottom_toBottomOf="@id/cl"/>-->
+
+            <LinearLayout
+                android:id="@+id/llh1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/finacecard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:elevation="20dp"
+                    android:background="@color/White"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/financeimg"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/notoserifblack"
+                            android:text="FINANCE"
+                            android:textColor="@color/Orange"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/financeimg"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/budget" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/academiacard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/White"
+                    android:layout_weight="1"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/academiaimg"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/notoserifblack"
+                            android:text="ACADEMIA"
+                            android:textColor="@color/Orange"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/academiaimg"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/study" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llh2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/eventcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/White"
+                    android:layout_weight="1"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/eventimg"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/notoserifblack"
+                            android:text="EVENT"
+                            android:textColor="@color/Orange"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/eventimg"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/calendar" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/soscard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/White"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sosimg"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/notoserifblack"
+                            android:text="SOS"
+                            android:textColor="@color/Orange"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/sosimg"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/sos" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:elevation="30dp">
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

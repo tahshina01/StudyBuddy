@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">StudyBuddy</string>
+    <string-array name="event_name">
+        <item>Fresher\'s Week 2023</item>
+        <item>Ideathon 2023</item>
+        <item>Indoor Games</item>
+        <item>Arbovirus Concert</item>
+        <item>Food Fest</item>
+        <item>Film Festival</item>
+        <item>CSEDU Reunion 2023</item>
+    </string-array>
+    <string-array name="Duration">
+        <item>21 september 2023</item>
+        <item>25 October 2023</item>
+        <item>25 February 2023</item>
+        <item>25 January 2023</item>
+        <item>25 November 2023</item>
+        <item>03 August 2023</item>
+        <item>25 December 2023</item>
+    </string-array>
+    <string-array name="Venue">
+        <item>Mokarrom hall</item>
+        <item>CSEDU auditorium</item>
+        <item>central field</item>
+        <item>TSC Auditorium</item>
+        <item>Hakim chottor</item>
+        <item>TSC</item>
+        <item>CSEDU Premises</item>
+    </string-array>
+
+    <string-array name="course">
+        <item>Fundamentals of Computers and Computing</item>
+        <item>Discrete Mathematics</item>
+        <item>Electrical Circuits</item>
+        <item>Chemistry</item>
+        <item>Differential and Integral Calculus</item>
+        <item>Fundamentals of Programming </item>
+        <item>Digital Logic Design </item>
+    </string-array>
+    <string-array name="id">
+        <item>CSE-1101 </item>
+        <item>CSE-1102 </item>
+        <item>EEE-1103</item>
+        <item>CHE-1104</item>
+        <item>MATH-1105</item>
+        <item>CSE-1201</item>
+        <item>EEE-1202</item>
+    </string-array>
+    <string-array name="instructor">
+        <item>MRR</item>
+        <item>SP</item>
+        <item>Ismat Rahman</item>
+        <item>Susan</item>
+        <item>Tanvir Rumi</item>
+        <item>MRR</item>
+        <item>Hasan Babu</item>
+    </string-array>
+
+    <string name="academic">Your Academic Journey</string>
+    <string name="finance">Stay Notified</string>
+    <string name="event">Discover Local Events</string>
+    <string name="sos">Emergency Assistance</string>
+
+    <string name="des_academic"> Simplify your learning experience with intuitive tools for note-taking, collaboration, and assignment management.</string>
+    <string name="des_finance">Streamline Your Notices and Stay Informed with Effortless Notification Management. </string>
+    <string name="des_event">Stay informed about the latest happenings in your area and receive event notifications all tailored to your interests to ensure you never miss an opportunity</string>
+    <string name="des_sos"> Count on our app for fast response times, real-time tracking, and vital resources during critical situations.</string>
+
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="start_btn">Lets Get Started</string>
+
+    <string name="appname">Drawer Sliding</string>
+
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Dashboard</item>
+        <item>My Profile</item>
+        <item>About Us</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/edit</item>
+        <item>@drawable/profile</item>
+        <item>@drawable/about_us</item>
+        <item>@drawable/logout</item>
+    </array>
+
+</resources>

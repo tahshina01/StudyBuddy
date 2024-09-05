@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/chat_bg"
+    android:layout_marginBottom="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noticeTextView"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timestampTextView"
+        android:textColor="@color/Gray"
+        android:layout_gravity="end"
+        android:textSize="15dp"
+         />
+</LinearLayout>
+

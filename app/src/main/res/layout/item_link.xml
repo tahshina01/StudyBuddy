@@ -1,0 +1,33 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/chat_bg"
+    android:layout_marginBottom="15dp"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/linkTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/delete"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_margin="5dp"
+        android:textColor="@color/White"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/delete"
+        android:id="@+id/delete"
+        android:contentDescription="Delete"
+        android:clickable="true" />
+</RelativeLayout>
+
